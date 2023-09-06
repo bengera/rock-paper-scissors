@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+$font: "Public Sans", sans-serif;
+$thin: 300;
+$regular: 400;
+$bold: 700;
+$font-size: 1.125rem;
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font;
+  font-weight: $thin;
+  color: $color-dark-blue;
+}
+
