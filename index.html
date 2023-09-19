@@ -6,7 +6,8 @@
   <meta name="description" content="rock paper scissors game">
   <meta name="keywords" content="rock, paper, scissors, game, project">
   <meta name="author" content="Ben Geraghty">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="#">
+  <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/game.js"></script>
   <title>Rock, Paper, Scissors</title>
@@ -14,20 +15,57 @@
 </head>
 <body>
 
-<div class="container"></div>
-
 <main>
 
-  
-    <!-- Steps with new Template
-    1. Choose fonts
-    2. Add pages
-    3. Add color variables and font variables
-    4. Start new repo and clone download
-    5. git init [repository name] - start a new repository
-    6. Check live changes are working / check connection to repo
-    7. Start coding
-   -->
+  <div class="container">
+
+    <div class="score-display">
+      <div class="score-display__inner">
+      <p class="score-display__text">Player:</p>
+      <p class="score">0</p>
+      <p class="score-display__text">Computer:</p>
+      <p class="score">0</p>
+    </div>
+    </div>
+
+    <div class="message-box">
+      <p class="messsage-box__message">Let's Play!</p>
+    </div>
+
+    <div class="rounds-bar">
+    <p class="round">Round</p>
+    <p class="round__score">0</p>
+  </div>
+
+  <div class="selections">
+
+  <div class="selections-images">
+      <img src="./images/paper.png" alt="player selection" class="img">
+      <img src="./images/e-paper.png" alt="computer selection" class="img">
+    </div>
+
+    <div class="results-container">
+      <div class="player-results">
+      <p class="text-choice">Scissors</p>
+      <p class="score">0</p>
+    </div>
+    
+    <div class="computer-results">
+      <p class="text-choice">Scissors</p>
+      <p class="score">0</p>
+    </div>
+  </div>
+
+    <div class="buttons-selection">
+      <button id="btn-rock" class="btn">Rock</button>
+      <button id="btn-paper" class="btn">Paper</button>
+      <button id="btn-scissors" class="btn">Scissors</button>
+    </div>
+
+  </div>
+
+  </div><!--container end-->
+
 
 </main>
  

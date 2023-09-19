@@ -1,6 +1,4 @@
-// @use '../abstracts/variables' as v; // double dot to go back an additional step // as v changes namespace
-// @use '../abstracts/variables' as *;  // takes away the namespace
-@use "../abstracts" as *; // imported with folder because of forwards
+@use "../abstracts" as *; //
 @use "./typography" as t;
 *,
 *::before,
@@ -15,33 +13,89 @@ html {
   scroll-behavior: smooth;
 }
 
-.btn-test {
-  background-color: red;
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  // border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: t.$font;
+  padding: 1rem;
 }
 
-// body {
-//   background-color: #F9F9F9;
-//   font-size: t.$font-size;
-//   line-height: 26px;
-//   margin: 0 auto;
-//   overflow-x: hidden;
-//   font-size: t.$font-size;
-//   font-family: t.$font;
-// }
+.score-display {
+  background-color: $color-grey;
+  padding: 1.3rem;
 
+  &__inner {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    font-weight: t.$bold;
+    // max-width: 400px;
+  }
 
-  
-// }
+  &__score-display {
+    display: flex;
+  }
 
-// svg {
-//   cursor: pointer;
-// }
+  &__score {
+  }
+}
 
-// svg:hover path {
-//   fill: #30C88F;
-//   @include transition;
-// }
+.message-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: $color-grey;
+  text-align: center;
+  font-size: 1.5em;
+  &__message {
+  }
+}
 
+.rounds-bar {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5em;
+}
 
+// Selections
+.selections {
+  text-align: center;
+  margin-top: 1rem;
+}
 
+.selections-images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
 
+.results-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 1.3em;
+  margin-top: 1rem;
+}
+
+.buttons-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  background-color: $color-grey;
+  border: 0;
+  width: 150px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.img {
+  width: 116px;
+}
